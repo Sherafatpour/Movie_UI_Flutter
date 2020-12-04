@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:movie_ui/util/constants.dart';
 
 class Genres extends StatefulWidget {
+final List<String> genres ;
+
+  const Genres({Key key, @required this.genres}) : super(key: key);
   @override
   _GenresState createState() => _GenresState();
 }
@@ -9,14 +12,7 @@ class Genres extends StatefulWidget {
 class _GenresState extends State<Genres> {
   int selectedItem = 0;
 
-  List<String> genres = [
-    "Action",
-    "Crime",
-    "Comedy",
-    "Drama",
-    "Horror",
-    "Animation"
-  ];
+
 
   @override
   Widget build(BuildContext context) {
@@ -24,9 +20,9 @@ class _GenresState extends State<Genres> {
         margin: EdgeInsets.symmetric(vertical: kDefaultPadding / 2),
         height: 36,
         child: ListView.builder(
-          itemCount: genres.length,
+          itemCount: widget.genres.length,
           scrollDirection: Axis.horizontal,
-          itemBuilder: (context, index) => buildGenreItem(genres[index], index),
+          itemBuilder: (context, index) => buildGenreItem(widget.genres[index], index),
         ));
   }
 

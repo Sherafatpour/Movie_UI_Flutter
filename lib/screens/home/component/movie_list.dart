@@ -61,7 +61,7 @@ class _MovieListState extends State<MovieList> {
           }
           return AnimatedOpacity(
               opacity: initializePage == index ? 1 : 0.4,
-              duration: Duration(milliseconds: 450),
+              duration: Duration(milliseconds: 250),
               child: Transform.rotate(
                   angle: math.pi * value, child: MovieCard(index: index)));
         },

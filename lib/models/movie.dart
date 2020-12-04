@@ -84,7 +84,7 @@ List<Movie> movies_en = [
       {
         "orginalName": "Mohamad Reza Sharifinia",
         "movieName": "Atashkar",
-        "image": "mohamadrezasharifinia.jpg",
+        "image": "assets/actors/mohamadrezasharifinia.jpg",
       },
       {
         "orginalName": "Pantea Panahiha",
@@ -193,7 +193,7 @@ List<Movie> movies_fa = [
       {
         "orginalName": "محمدرضا شریفی نیا",
         "movieName": "آتشکار",
-        "image": "mohamadrezasharifinia.jpg",
+        "image": "assets/actors/mohamadrezasharifinia.jpg",
       },
       {
         "orginalName": "پانتئا پناهیان",

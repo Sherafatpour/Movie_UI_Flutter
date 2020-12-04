@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:movie_ui/screens/home/body.dart';
+import 'package:movie_ui/screens/home/component/body.dart';
 import 'package:movie_ui/util/size_config.dart';
 
 void main() {
